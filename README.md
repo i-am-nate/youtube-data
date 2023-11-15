@@ -1,5 +1,5 @@
 # youtube-data
-Analyzing YouTube channel data from Tabletop Sandbox (2.25.23-8.27.23)
+Analyzing YouTube channel data from Tabletop Sandbox (2.25.23-8.27.23). Softwares utilized: Google Sheets.
 
 **Tabletop Sandbox** is a channel on YouTube that belongs to Tabletop Sandbox LLC, a business launched with [the YouTube channel](http://youtube.com/@tabletopsandbox) on February 25, 2023; I claim part ownership in this company. On September 1, 2023, one of the fellow co-owners and I retrieved from YouTube data concerning the channel in order to answer some questions, all of which had to do with the underlying desire to increase viewership.
 
