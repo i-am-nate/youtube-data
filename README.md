@@ -1,10 +1,17 @@
 # youtube-data
+
+## Examining first-party YouTube analytics to drive decision making
+
+### About
 Analyzing YouTube channel data from Tabletop Sandbox (2.25.23-8.27.23). Softwares utilized: Google Sheets.
 
+### Overview
 **Tabletop Sandbox** is a channel on YouTube that belongs to Tabletop Sandbox LLC, a business launched with [the YouTube channel](http://youtube.com/@tabletopsandbox) on February 25, 2023; I claim part ownership in this company. On September 1, 2023, one of the fellow co-owners and I retrieved from YouTube data concerning the channel in order to answer some questions, all of which had to do with the underlying desire to increase viewership.
 
+### Business understanding
 Apart from the first week (February 25) in which four videos released, every week thereafter one video released per week until the the final video in the period (August 27). In thinking through how the data could help increase overall viewership on the channel, four main questions rose to the surface that we wanted to answer: 1) How long are people sticking with each video? 2) How does the intro affect retention? 3) How does video length affect retention? and 4) Are there certain categories that perform better than others?
 
+### Data understanding
 Much of the data we needed was contained within the YouTube Studio account, and so I downloaded a csv and imported it into Google Sheets ([see the document here](https://docs.google.com/spreadsheets/d/1YxjRCyv-KDdmIGukaEMBs8gkpunVQQ_qvd4I2frD_jI/edit#gid=7763040)).
 
 The finished Google Sheets document is laid out as follows: I began with an intro sheet tab; after this, the next two tabs represent the cleaned data itself (mostly from YouTube but with some self-additions). The first contains all data, while the second contains just a Boolean video category chart. All additional tabs after that contain pivot tables and subsets of the data, each with their own visualizations.
@@ -23,6 +30,7 @@ Much of the clean up process that did exist within Google Sheets concerned data 
 
 To better understand the data, first I created a Sum and an Average rows, and I used SUM, AVERAGE, and COUNTIF/COUNTA functions to accomplish that. I then used AVERAGEIFS to calculate average views and average impressions for each video category.
 
+### Evaluation
 Now, to look toward the questions. **First**, how long are people sticking with each video? Video retention is an excellent measure of this question, because it is a measurement of those still watching at the 30-second mark. We can see below here that, from the beginning of the channel’s history on February 25 until the end of the timeline period, there is a slight but downward trend in overall video retention going down an average of around 5% from its initial peak at around 70%.
 
 ![1 1 Video Retention Over History (2_25_23-8_27_23)](https://github.com/i-am-nate/youtube-data/assets/112446964/1a326218-c519-4632-ae48-50c300824d2d)
@@ -60,4 +68,5 @@ To look into this category more and to get a bit more granular, I used AVERAGEIF
 
 <img width="666" alt="4 2 DnD in title vs not in title" src="https://github.com/i-am-nate/youtube-data/assets/112446964/2d9ee99d-e590-43ba-93e5-8f09600fab76">
 
+### Conclusion
 Overall, after analyzing the data, we had our results, the answers to the questions being asked of how we could increase channel viewership. We discovered that slowly over the course of the timeline, overall video retention has been slightly decreasing, and the ratio or length of the intro seems irrelevant. Instead, the answers came down to **ideal video length** and **category awareness**. Videos that performed the best had a video length of 9:32-13:58, and videos that contained ‘D&D’ in the title performed better than those that did not have that phrase in the title.
