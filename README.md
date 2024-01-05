@@ -33,40 +33,40 @@ To better understand the data, first I created a Sum and an Average rows, and I 
 ### Evaluation
 Now, to look toward the questions. **First**, how long are people sticking with each video? Video retention is an excellent measure of this question, because it is a measurement of those still watching at the 30-second mark. We can see below here that, from the beginning of the channel’s history on February 25 until the end of the timeline period, there is a slight but downward trend in overall video retention going down an average of around 5% from its initial peak at around 70%.
 
-![1 1 Video Retention Over History (2_25_23-8_27_23)](https://github.com/i-am-nate/youtube-data/assets/112446964/1a326218-c519-4632-ae48-50c300824d2d)
+![1 1 Video Retention Over History (2_25_23-8_27_23)](https://github.com/i-am-nate/youtube-data/blob/main/photos/1.1%20Video%20Retention%20Over%20History%20(2_25_23-8_27_23).png)
 
 Yes, this seemed well and good. But why was this happening? So we turned to our **second** question, how does the intro affect retention? Because in the data we have columns for both video duration and intro length, a simple division calculation into a third column gave me a ratio of how much of each video the intro was taking up. So juxtaposing that ratio with our video retention timeline, do we see inverse correlations to perhaps show that the longer an intro takes up of a video the less retention will increase? In fact, we find no correlation one way or the other.
 
-![2 1 Video Retention vs  Intro-to-Video Ratio Over History (2_25_23-8_27_23)](https://github.com/i-am-nate/youtube-data/assets/112446964/660e76e8-f870-4849-9861-63acb93ec04d)
+![2 1 Video Retention vs  Intro-to-Video Ratio Over History (2_25_23-8_27_23)](https://github.com/i-am-nate/youtube-data/blob/main/photos/2.1%20Video%20Retention%20vs.%20Intro-to-Video%20Ratio%20Over%20History%20(2_25_23-8_27_23).png)
 
 This is confirmed when we compare specifically video retention rate across the various intro-to-video ratios represented: the trend line is almost horizontal, showing no effect one way or the other. This is also true when comparing the intro lengths themselves instead of just the ratios—trending nearly horizontal.
 
-![2 2 Video Retention per Intro-to-Video Ratio](https://github.com/i-am-nate/youtube-data/assets/112446964/1dc65b96-23e7-46ad-9ff2-f10b61f2e551)
-![2 3 Video Retention per Intro Length](https://github.com/i-am-nate/youtube-data/assets/112446964/c5d90472-36d6-4f64-9ae0-3fba969dc152)
+![2 2 Video Retention per Intro-to-Video Ratio](https://github.com/i-am-nate/youtube-data/blob/main/photos/2.2%20Video%20Retention%20per%20Intro-to-Video%20Ratio.png)
+![2 3 Video Retention per Intro Length](https://github.com/i-am-nate/youtube-data/blob/main/photos/2.3%20Video%20Retention%20per%20Intro%20Length.png)
 
 If intro ratio is non-determinative of higher retention, then **third**, what lies within the data to help us answer how video length affects it? Here we look at 5 factors—views, percentage viewed, view duration, total watch time, and impressions—compared to video length to discover potential correlations. This data would be helpful in determining ideal video length across different categories.
 
 Total views suggested a sweet spot between 9:32-13:58 with pretty sharp drop offs shorter and especially longer than those lengths.
 
-![3 1 Views per Video Length](https://github.com/i-am-nate/youtube-data/assets/112446964/ef607428-e6b9-4504-bfdd-4acba5295677)
+![3 1 Views per Video Length](https://github.com/i-am-nate/youtube-data/blob/main/photos/3.1%20Views%20per%20Video%20Length.png)
 
 Percentage viewed showed that, as the length of the video increased, the percentage of the entire video viewed by those who did indeed watch the video decreases in a decently consistent manner. Although, perhaps intuitively, average view duration ascended upward with near the same slope the percentage viewed graph descended; the average duration rises, even while the average percentage viewed decreases.
 
-![3 2 Percentage Viewed per Video Length](https://github.com/i-am-nate/youtube-data/assets/112446964/b6fa28a1-bb99-489f-99fd-0f613e9d47db)
-![3 3 View Duration per Video Length](https://github.com/i-am-nate/youtube-data/assets/112446964/3c14978e-e1ed-4f92-b5ed-a5ba653c5204)
+![3 2 Percentage Viewed per Video Length](https://github.com/i-am-nate/youtube-data/blob/main/photos/3.2%20Percentage%20Viewed%20per%20Video%20Length.png)
+![3 3 View Duration per Video Length](https://github.com/i-am-nate/youtube-data/blob/main/photos/3.3%20View%20Duration%20per%20Video%20Length.png)
 
 However, when we look at total cumulative watch time per video divided up into length, we find a nearly identical graph and curve as the total views graph: that same sweet spot around 9:32-13:58. We also find the same exact story when comparing impressions instead.
 
-![3 4 Watch Time per Video Length](https://github.com/i-am-nate/youtube-data/assets/112446964/bfaa82a2-86b9-4dd0-b0cb-30f8d8f1e019)
-![3 5 Impressions per Video Length](https://github.com/i-am-nate/youtube-data/assets/112446964/09b403f2-3202-46b3-a0c3-a158081276c0)
+![3 4 Watch Time per Video Length](https://github.com/i-am-nate/youtube-data/blob/main/photos/3.4%20Watch%20Time%20per%20Video%20Length.png)
+![3 5 Impressions per Video Length](https://github.com/i-am-nate/youtube-data/blob/main/photos/3.5%20Impressions%20per%20Video%20Length.png)
 
 Finally, **fourth**, are there certain categories that perform better than others? Admittedly, there was an outlier category called ‘Cairn’ that was so off the chart it is not included with the graphs. However, in analyzing each category for the total combined number of views and impressions (impressions divided by 10 for comparison’s sake and with the total number of videos in each category beside each category), it became very obvious that in terms of both views and impressions, ‘D&D’ rose to the top.
 
-![4 1 Views and Impressions per Category](https://github.com/i-am-nate/youtube-data/assets/112446964/8748d487-783f-4fd1-9091-4b5626b4ca50)
+![4 1 Views and Impressions per Category](https://github.com/i-am-nate/youtube-data/blob/main/photos/4.1%20Views%20and%20Impressions%20per%20Category.png)
 
 To look into this category more and to get a bit more granular, I used AVERAGEIFS functions to check across many different metrics if they would be greater if they contained ‘D&D’ even in the title of the video itself. And across almost every metric, videos with D&D in the title contained a way better chance of leaving impressions and being viewed. An interesting side effect is the slight drop in Average Like Percentage for videos containing D&D, despite its uptick in other categories; this can perhaps be attributed to the topic being more controversial, leading to greater disparity of opinion on video content. Although not accounted for in this dataset, looking at a Comments metric would also be helpful in determining potential controversial videos or topics, as more comments could suggest more dialogue and engagement.
 
-<img width="666" alt="4 2 DnD in title vs not in title" src="https://github.com/i-am-nate/youtube-data/assets/112446964/2d9ee99d-e590-43ba-93e5-8f09600fab76">
+![4 2 DnD in title vs not in title](https://github.com/i-am-nate/youtube-data/blob/main/photos/4.2%20DnD%20in%20title%20vs%20not%20in%20title.png)
 
 ### Conclusion
 Overall, after analyzing the data, we had our results, the answers to the questions being asked of how we could increase channel viewership. We discovered that slowly over the course of the timeline, overall video retention has been slightly decreasing, and the ratio or length of the intro seems irrelevant. Instead, the answers came down to **ideal video length** and **category awareness**. Videos that performed the best had a video length of 9:32-13:58, and videos that contained ‘D&D’ in the title performed better than those that did not have that phrase in the title.
